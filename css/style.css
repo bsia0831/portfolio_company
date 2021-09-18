@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap");
 * {
   margin: 0px;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Heebo';
+  box-sizing: border-box; }
 
 ul, ol, li {
   list-style: none; }
@@ -8,5 +11,222 @@ ul, ol, li {
 a {
   text-decoration: none;
   outline: 1; }
+
+#header {
+  width: 100%;
+  position: absolute;
+  background-color: #f5e8ea; }
+  #header .inner {
+    width: 1180px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative; }
+    #header .inner .logo {
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      transform: translateY(-50%); }
+      #header .inner .logo img {
+        width: 50px;
+        height: 50px; }
+      #header .inner .logo > h1 a {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-60%);
+        font-size: 20px;
+        color: #555; }
+        #header .inner .logo > h1 a::after {
+          content: '';
+          border-right: 2px solid #888;
+          margin-left: 20px;
+          font-size: 30px; }
+    #header .inner .menuWeb #gnb {
+      position: absolute;
+      top: 50%;
+      left: 225px;
+      transform: translateY(-50%); }
+      #header .inner .menuWeb #gnb::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #header .inner .menuWeb #gnb li {
+        float: left; }
+        #header .inner .menuWeb #gnb li a {
+          display: block;
+          padding: 0px 20px;
+          color: #555;
+          font: bold 12px/1;
+          transition: 0.5s; }
+        #header .inner .menuWeb #gnb li:hover a {
+          text-decoration: underline; }
+    #header .inner .menuWeb .icons {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%); }
+      #header .inner .menuWeb .icons::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #header .inner .menuWeb .icons li {
+        float: left; }
+        #header .inner .menuWeb .icons li a {
+          display: block;
+          padding: 30px 10px;
+          transition: 0.5s;
+          color: #555; }
+          #header .inner .menuWeb .icons li a i {
+            font-size: 17px; }
+        #header .inner .menuWeb .icons li:hover a {
+          transform: scale(1.2);
+          color: #E7A7A7; }
+    #header .inner .btnCall {
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      display: none; }
+      #header .inner .btnCall::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        transition: top 0.5s 0s, transform 0.5s 0.5s; }
+      #header .inner .btnCall::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: rotate(0deg);
+        transition: bottom 0.5s 0s, transform 0.5s 0.5s; }
+      #header .inner .btnCall span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        text-indent: -9999px;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        transition: 0.5s; }
+      #header .inner .btnCall.on::before {
+        transform: rotate(45deg);
+        top: 50%;
+        margin-top: -1px; }
+      #header .inner .btnCall.on::after {
+        transform: rotate(-45deg);
+        bottom: 50%;
+        margin-bottom: -1px; }
+      #header .inner .btnCall.on span {
+        transform: translateX(100%);
+        opacity: 0; }
+    #header .inner .menuMo {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      background: #111;
+      transition: 0.5s;
+      padding: 35px 30px;
+      box-sizing: border-box;
+      z-index: 10; }
+      #header .inner .menuMo .closeBtn {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        width: 20px;
+        height: 20px;
+        transition: 0.5s; }
+        #header .inner .menuMo .closeBtn::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: rotate(45deg); }
+        #header .inner .menuMo .closeBtn::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: rotate(-45deg); }
+        #header .inner .menuMo .closeBtn:hover {
+          transform: scale(1.2); }
+      #header .inner .menuMo .util {
+        position: absolute;
+        top: 50px;
+        right: 0px; }
+        #header .inner .menuMo .util::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #header .inner .menuMo .util li {
+          float: left; }
+          #header .inner .menuMo .util li a {
+            display: block;
+            font: 13px/1 'Amiri';
+            color: #fff;
+            padding: 0 15px;
+            transition: 0.5s; }
+          #header .inner .menuMo .util li:hover a {
+            transform: scale(1.2);
+            color: #e7dd54; }
+      #header .inner .menuMo .icons {
+        position: absolute;
+        top: 60px;
+        right: 0; }
+        #header .inner .menuMo .icons::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #header .inner .menuMo .icons li {
+          float: left; }
+          #header .inner .menuMo .icons li a {
+            display: block;
+            padding: 30px 15px;
+            transition: 0.5s;
+            color: #fff; }
+            #header .inner .menuMo .icons li a i {
+              font-size: 22px; }
+          #header .inner .menuMo .icons li:hover a {
+            transform: scale(1.2);
+            color: #e7dd54; }
+      #header .inner .menuMo #gnbMo {
+        margin-top: 100px; }
+        #header .inner .menuMo #gnbMo li a {
+          display: block;
+          width: 100%;
+          padding: 40px 0;
+          font: bold 20px/1 'Amiri';
+          text-align: left;
+          transition: 0.5s;
+          color: #efefef; }
+        #header .inner .menuMo #gnbMo li:hover a {
+          transform: translateX(50px);
+          color: #e7dd54;
+          font-style: italic; }
+      #header .inner .menuMo.on {
+        left: 0; }
 
 /*# sourceMappingURL=style.css.map */
