@@ -14,7 +14,6 @@ a {
 
 #header {
   width: 100%;
-  position: absolute;
   background-color: #f5e8ea; }
   #header .inner {
     width: 1180px;
@@ -228,5 +227,97 @@ a {
           font-style: italic; }
       #header .inner .menuMo.on {
         left: 0; }
+
+#visual {
+  width: 100%;
+  background: #efefef; }
+  #visual .inner {
+    width: 1180px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative; }
+
+#footer {
+  width: 100%;
+  background: #fff; }
+  #footer .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    #footer .inner .logo {
+      position: relative;
+      height: 70px;
+      top: 30px;
+      left: 0; }
+      #footer .inner .logo img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px; }
+      #footer .inner .logo > h1 a {
+        position: absolute;
+        top: 12px;
+        left: 55px;
+        font-size: 20px;
+        color: #111; }
+    #footer .inner .icons {
+      position: absolute;
+      top: 15px;
+      right: 0; }
+      #footer .inner .icons::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #footer .inner .icons li {
+        float: left; }
+        #footer .inner .icons li a {
+          display: block;
+          padding: 30px 10px;
+          transition: 0.5s;
+          color: #111; }
+          #footer .inner .icons li a i {
+            font-size: 17px; }
+        #footer .inner .icons li:hover a {
+          transform: scale(1.2);
+          color: #E7A7A7; }
+    #footer .inner .link {
+      width: 100%;
+      height: 300px;
+      padding: 50px 0;
+      position: relative; }
+      #footer .inner .link .items {
+        width: 25%;
+        float: left;
+        margin-left: 0; }
+        #footer .inner .link .items h2 {
+          font: 15px/1; }
+        #footer .inner .link .items hr {
+          display: block;
+          width: 20%;
+          margin: 20px 0; }
+        #footer .inner .link .items nav ul li {
+          margin: 10px 0; }
+          #footer .inner .link .items nav ul li a {
+            color: #888;
+            font-size: 12px; }
+    #footer .inner .bottom {
+      width: 100%;
+      height: 60px;
+      margin-top: 25px;
+      padding: 10px 0;
+      position: relative; }
+      #footer .inner .bottom > ul {
+        position: absolute;
+        right: 0; }
+        #footer .inner .bottom > ul li {
+          float: left;
+          font-size: 10px; }
+          #footer .inner .bottom > ul li a {
+            color: #999; }
+            #footer .inner .bottom > ul li a::after {
+              content: '';
+              border-right: 1px solid #999;
+              margin: 0 10px; }
 
 /*# sourceMappingURL=style.css.map */
