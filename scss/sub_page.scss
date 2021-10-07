@@ -1,15 +1,10 @@
 @charset "utf-8";
-
-$tablet:1179px;
-$mobile:539px;
-
-@import "reset.scss";
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 
 #header_sub {
     width: 100%;
-    background-color: #f5e8ea;
+    background-color: #fff1f3;
 
     .inner {
         width: 1180px;
@@ -338,38 +333,11 @@ $mobile:539px;
     }
 }
 
-
-.visual_sub{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-color: #000;
-
-    .inner{
-        width: 1180px;
-        margin: 0 auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: text 3s ease;
-        overflow: hidden;
-    }
-
-    h1 {
-        font: normal 120px/1 'Amiri';
-        text-shadow: 1px 1px 10px #111;
-        color: #fff;
-        margin-bottom: 20px;
-        animation: fadein 3s ease-in;
-        text-align: center;
-    }
-}
-
 /*subpage content -----------------------------------*/
 .content{
     width: 100%;
-    padding: 70px 0px 150px;
+    padding: 100px 0px 150px;
+    background: #fff1f3;
 
     .inner{
         width: 1180px;
@@ -377,7 +345,7 @@ $mobile:539px;
         min-height: 500px;
 
         h1{
-            font: normal 50px/1 'Amiri';
+            font: bold 60px/1 'Libre Baskerville';
             color: #000;
             margin-bottom: 60px;
 
