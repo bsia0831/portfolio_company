@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap");
 * {
   margin: 0px;
@@ -256,8 +257,7 @@ a {
   background: #fff1f3; }
   .content .inner {
     width: 1180px;
-    margin: 0 auto;
-    min-height: 500px; }
+    margin: 0 auto; }
     .content .inner h1 {
       font: bold 60px/1 'Libre Baskerville';
       color: #000;
@@ -387,7 +387,7 @@ a {
       display: block; } }
 #gallery {
   width: 100%;
-  padding: 50px; }
+  padding: 10px; }
   #gallery ul {
     width: 100%; }
     #gallery ul::after {
@@ -397,24 +397,31 @@ a {
     #gallery ul li {
       float: left;
       width: calc(100% / 3);
-      padding: 10px; }
+      padding: 35px 13px; }
       #gallery ul li .inner {
         width: 100%;
-        padding: 20px;
         box-sizing: border-box;
-        background: #fff;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+        background: #fff1f3;
         border-radius: 6px; }
         #gallery ul li .inner a {
           display: block;
-          width: 100%;
-          margin-bottom: 10px; }
+          width: 100%; }
           #gallery ul li .inner a img {
-            width: 100%; }
+            width: 100%;
+            height: 230px; }
         #gallery ul li .inner p {
-          font: bold 16px/1.2 'arial';
-          color: #777;
-          margin-bottom: 30px; }
+          font: bold 25px/1.2 'Teko';
+          letter-spacing: 1px;
+          color: #000;
+          margin: 15px 0; }
+          #gallery ul li .inner p::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: #000;
+            left: 0;
+            bottom: 0; }
 
 .pop {
   width: 100%;
@@ -430,8 +437,9 @@ a {
     height: 100%;
     object-fit: cover; }
   .pop span {
-    font: bold 14px/1 'arial';
+    font: bold 14px/1 'Teko';
     color: #fff;
+    letter-spacing: 2px;
     position: absolute;
     top: 20px;
     right: 20px;

@@ -4,7 +4,7 @@ $.ajax({
     dataType:"json", 
     data:{
         api_key:"d61e30a1010fe3e1dab106d3a2df0f21", 
-        per_page: 20, 
+        per_page: 21, 
         format:"json",
         nojsoncallback:1, //json객체를 감싸고 있는 wrapping 함수를 걷어냄 
         privacy_filter : 5, 
@@ -23,6 +23,12 @@ $.ajax({
 
         //변수 text에 이미지 데이터의 title을 담음 
         let text = data.title; 
+        //본문 텍스트 내용이 200글자를 넘어가면 말줄임표 붙이기 
+        let len = text.length;
+        if (len > 40) {
+            txt = txt.substr(0, 40) + "..."
+        }
+        
         //만약 해당 이미지 데이터에 제목 텍스트가 없으면 
         if(!data.title){
             //변수 text에 임의의 텍스트를 저장하여 추후 발생할 수 있는 오류 방지 
@@ -48,19 +54,9 @@ $.ajax({
                                 })
                             )
                         )
-                    )
-                    .append(
-                        $("<p>").text(text)
-                    )
-                    //이미지를 올린 사용자 프로필 이미지와 이름 출력 
-                    .append(
-                        $("<div class='profile'>")
-                            .append(
-                                $("<img>").attr({
-                                    src : "https://www.flickr.com/buddyicons/"+data.owner+".jpg"
-                                }),
-                                $("<span>").text(data.owner)
-                            )
+                        .append(
+                            $("<p>").text(text)
+                        )
                     )
             )
     })
