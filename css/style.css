@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 * {
   margin: 0px;
   padding: 0;
@@ -740,39 +741,65 @@ a {
 
 #visual {
   width: 100%;
-  background: #efefef; }
+  background: #fff1f3; }
   #visual .inner {
     width: 1180px;
-    height: 100vh;
+    height: calc(100vh - 120px);
     margin: 0 auto;
     position: relative; }
     #visual .inner #popup {
-      width: 500px;
+      width: 350px;
       background: #fff;
-      padding: 40px;
+      padding: 30px;
       box-sizing: border-box;
       color: #000;
       position: absolute;
-      top: 50%;
+      top: 60%;
       left: 50%;
       transform: translate(-50%, -80%); }
       #visual .inner #popup .popup_content {
-        width: 500px;
-        min-height: 150px; }
-      #visual .inner #popup::after {
-        content: '';
-        display: block;
-        clear: both; }
-      #visual .inner #popup .wrap {
-        float: left; }
-        #visual .inner #popup .wrap label {
-          font: bold 12px/1 'Heebo';
-          color: #000;
-          margin-left: 4px; }
-      #visual .inner #popup .close {
-        float: right;
-        font: 14px/1 'arial';
-        color: #000; }
+        width: 100%;
+        min-height: 270px;
+        text-align: center; }
+        #visual .inner #popup .popup_content > i {
+          font-size: 50px;
+          color: #E7A7A7;
+          margin-bottom: 15px; }
+        #visual .inner #popup .popup_content > h1 {
+          font: bold 30px/1 'Heebo';
+          color: #462d2d;
+          margin-bottom: 10px; }
+        #visual .inner #popup .popup_content > h2 {
+          font: 20px/1.2 'Heebo';
+          color: #462d2d;
+          margin-bottom: 30px; }
+        #visual .inner #popup .popup_content .accept {
+          display: inline-block;
+          width: 200px;
+          height: 50px;
+          font: 17px/50px 'Heebo';
+          color: #462d2d;
+          text-align: center;
+          position: relative;
+          border: none;
+          background: #E7A7A7;
+          margin-bottom: 10px;
+          cursor: pointer; }
+        #visual .inner #popup .popup_content .close {
+          text-align: center;
+          color: #E7A7A7; }
+    #visual .inner .main_text {
+      padding: 80px 0px 0px 70px; }
+      #visual .inner .main_text h1 {
+        font: 120px/1 'Archivo Black';
+        color: #333; }
+      #visual .inner .main_text #slider {
+        width: 1060px;
+        height: 120px;
+        overflow: hidden; }
+        #visual .inner .main_text #slider .list {
+          width: 100%;
+          height: calc(100% * 3); }
 
 section {
   width: 100%;
@@ -814,9 +841,6 @@ section {
         section#brand .inner .wrap article:nth-of-type(4) {
           transition-delay: 0.6s;
           margin-right: 0; }
-    section#brand.on .inner .wrap article {
-      opacity: 1;
-      transform: translateY(0px); }
 
 #footer {
   width: 100%;

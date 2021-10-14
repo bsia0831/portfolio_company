@@ -2,7 +2,7 @@ const $btns = $("#navi li");
 const $boxs = $(".myScroll"); 
 let posArr = []; 
 let len = $btns.length; 
-let baseLine = -300; 
+let baseLine = -100; 
 
 //posArr.push($boxs.eq(1).offset().top); 
 
@@ -29,19 +29,12 @@ $(window).on("scroll", function(){
     var scroll = $(this).scrollTop();
 
     console.log(scroll); 
-    $("#visual p").css({
-        transform:"rotate("+scroll/4+"deg) scale("+scroll/1000 +")" 
-    });
 
     // scroll이 section#news에 도착하면(scrollTop =960 )
     if(scroll >= posArr[1] && scroll < posArr[2]){
         scroll = scroll - posArr[1]; 
         console.log(scroll);
 
-        $("#news p").css({
-            left:scroll,
-            top:scroll
-        }); 
     } 
     
 
