@@ -14,6 +14,8 @@ $mobile:539px;
 
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap');
 
+
+
 #header {
     width: 100%;
     background-color: #fff1f3;
@@ -353,6 +355,36 @@ $mobile:539px;
         height:100vh; 
         margin:0 auto; 
         position:relative; 
+
+        #popup{
+            width: 500px;
+            background: #fff;
+            padding: 40px; box-sizing: border-box;
+            color: #000;
+            position: absolute;
+            top: 50%; left: 50%; transform: translate(-50%, -80%);
+        
+            .popup_content{
+                width: 500px; min-height: 150px;
+            }
+        
+            &::after{
+                content: ''; display: block; clear: both;
+            }
+        
+            .wrap{
+                float: left;
+                label{
+                    font: bold 12px/1 'Heebo'; color: #000;
+                    margin-left: 4px;
+                }
+            }
+        
+            .close{
+                float: right;
+                font: 14px/1 'arial'; color: #000;
+            }
+        }
     }
 }
 

@@ -445,6 +445,46 @@ a {
     right: 20px;
     cursor: pointer; }
 
+#map {
+  width: 100%;
+  height: 500px; }
+
+.branch {
+  float: right;
+  margin-top: 20px; }
+  .branch li {
+    float: left;
+    margin-right: 10px; }
+    .branch li a {
+      display: block;
+      width: 200px;
+      height: 40px;
+      background: #555;
+      font: bold 12px/40px '맑은 고딕';
+      color: #fff;
+      text-align: center; }
+    .branch li.on a {
+      background: #aaa;
+      color: #333; }
+
+.traffic {
+  float: left;
+  margin-top: 20px; }
+  .traffic li {
+    float: left;
+    margin-right: 10px; }
+    .traffic li a {
+      display: block;
+      width: 200px;
+      height: 40px;
+      background: #555;
+      font: bold 12px/40px "맑은 고딕";
+      color: #fff;
+      text-align: center; }
+    .traffic li.on a {
+      background: #aaa;
+      color: #333; }
+
 #vidGallery {
   width: 100%;
   padding: 100px; }
@@ -706,6 +746,33 @@ a {
     height: 100vh;
     margin: 0 auto;
     position: relative; }
+    #visual .inner #popup {
+      width: 500px;
+      background: #fff;
+      padding: 40px;
+      box-sizing: border-box;
+      color: #000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -80%); }
+      #visual .inner #popup .popup_content {
+        width: 500px;
+        min-height: 150px; }
+      #visual .inner #popup::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #visual .inner #popup .wrap {
+        float: left; }
+        #visual .inner #popup .wrap label {
+          font: bold 12px/1 'Heebo';
+          color: #000;
+          margin-left: 4px; }
+      #visual .inner #popup .close {
+        float: right;
+        font: 14px/1 'arial';
+        color: #000; }
 
 section {
   width: 100%;
