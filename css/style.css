@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
@@ -260,16 +261,9 @@ a {
     width: 1180px;
     margin: 0 auto; }
     .content .inner h1 {
-      font: bold 60px/1 'Libre Baskerville';
-      color: #000;
+      font: 80px/1 'Archivo Black';
+      color: #333;
       margin-bottom: 60px; }
-      .content .inner h1 span {
-        font: normal 20px/1 "맑은 고딕";
-        color: #aaa; }
-        .content .inner h1 span::before {
-          content: '/';
-          margin-right: 20px;
-          margin-left: 10px; }
 
 #footer_sub {
   width: 100%;
