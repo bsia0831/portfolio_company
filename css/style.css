@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gudea&family=Londrina+Outline&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 * {
@@ -19,7 +20,7 @@ a {
 
 #header_sub {
   width: 100%;
-  background-color: #fff1f3; }
+  background-color: #E7A7A7; }
   #header_sub .inner {
     width: 1180px;
     height: 120px;
@@ -39,10 +40,10 @@ a {
         left: 50px;
         transform: translateY(-60%);
         font-size: 20px;
-        color: #555; }
+        color: #efefef; }
         #header_sub .inner .logo > h1 a::after {
           content: '';
-          border-right: 2px solid #888;
+          border-right: 2px solid #efefef;
           margin-left: 20px;
           font-size: 30px; }
     #header_sub .inner .menuWeb #gnb {
@@ -60,7 +61,7 @@ a {
           position: relative;
           display: block;
           padding: 0px 20px;
-          color: #555;
+          color: #efefef;
           font: bold 12px/1;
           transition: 0.5s; }
           #header_sub .inner .menuWeb #gnb li a::after {
@@ -71,7 +72,7 @@ a {
             display: block;
             position: absolute;
             margin-top: 2px;
-            border-bottom: 1px solid #777;
+            border-bottom: 1px solid #efefef;
             transition: all .3s ease; }
           #header_sub .inner .menuWeb #gnb li a:hover::after {
             content: '';
@@ -81,7 +82,7 @@ a {
             display: block;
             position: absolute;
             margin-top: 2px;
-            border-bottom: 1px solid #777;
+            border-bottom: 1px solid #efefef;
             transition: all .3s ease; }
     #header_sub .inner .menuWeb .icons {
       position: absolute;
@@ -98,12 +99,11 @@ a {
           display: block;
           padding: 30px 10px;
           transition: 0.5s;
-          color: #555; }
+          color: #efefef; }
           #header_sub .inner .menuWeb .icons li a i {
             font-size: 17px; }
         #header_sub .inner .menuWeb .icons li:hover a {
-          transform: scale(1.2);
-          color: #E7A7A7; }
+          transform: scale(1.2); }
     #header_sub .inner .btnCall {
       position: absolute;
       top: 50%;
@@ -117,7 +117,7 @@ a {
         display: block;
         width: 100%;
         height: 2px;
-        background: #555;
+        background: #efefef;
         position: absolute;
         top: 0;
         left: 0;
@@ -128,7 +128,7 @@ a {
         display: block;
         width: 100%;
         height: 2px;
-        background: #555;
+        background: #efefef;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -138,7 +138,7 @@ a {
         display: block;
         width: 100%;
         height: 2px;
-        background: #555;
+        background: #efefef;
         text-indent: -9999px;
         position: absolute;
         top: 50%;
@@ -255,15 +255,15 @@ a {
 /*subpage content -----------------------------------*/
 .content {
   width: 100%;
-  padding: 100px 0px 150px;
-  background: #fff1f3; }
+  background: #E7A7A7; }
   .content .inner {
     width: 1180px;
     margin: 0 auto; }
     .content .inner h1 {
       font: 80px/1 'Archivo Black';
       color: #333;
-      margin-bottom: 60px; }
+      margin-bottom: 60px;
+      position: relative; }
 
 #footer_sub {
   width: 100%;
@@ -480,6 +480,113 @@ a {
       background: #aaa;
       color: #333; }
 
+.content {
+  padding: 100px 0;
+  background: #E7A7A7;
+  position: relative; }
+  .content .values_text {
+    margin-top: 0px;
+    padding-left: 50px;
+    position: relative; }
+    .content .values_text > h1 {
+      color: #f5f5f5;
+      text-align: left; }
+  .content .values_list {
+    width: 100%;
+    padding-top: 120px;
+    position: relative; }
+    .content .values_list .list {
+      width: 100%; }
+      .content .values_list .list li {
+        height: 250px;
+        border-top: 1px solid #efefef;
+        position: relative; }
+        .content .values_list .list li .num {
+          font: 200px/1 'Londrina Outline';
+          color: #efefef;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 25px; }
+        .content .values_list .list li .left_text {
+          position: absolute;
+          font: 30px/1 'Gudea';
+          top: 50%;
+          transform: translateY(-50%);
+          left: 70px; }
+        .content .values_list .list li .right_text {
+          display: block;
+          width: 560px;
+          height: 60px;
+          position: absolute;
+          font: 30px/1.2 'Gudea';
+          top: 50%;
+          transform: translateY(-50%);
+          right: 70px; }
+        .content .values_list .list li:last-child {
+          border-bottom: 1px solid #efefef; }
+  .content .people .people_text {
+    margin-top: 250px;
+    width: 100%;
+    height: 200px;
+    position: relative; }
+    .content .people .people_text h1 {
+      display: block;
+      position: absolute;
+      text-align: left;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-bottom: 0; }
+    .content .people .people_text p {
+      width: 60%;
+      font: 20px/1.2 'Gudea';
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0; }
+  .content .people section {
+    width: 100%;
+    padding-top: 70px; }
+    .content .people section::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .content .people section article {
+      width: calc(100% / 3);
+      float: left;
+      padding: 15px; }
+      .content .people section article div {
+        width: 360px;
+        height: 530px;
+        overflow: hidden; }
+      .content .people section article img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: all 0.5s; }
+        .content .people section article img:hover {
+          transform: scale(1.1);
+          transition: all 0.5s; }
+      .content .people section article h4 {
+        margin-top: 15px;
+        font: bold 24px/1 'Gudea';
+        letter-spacing: 1px;
+        color: #000;
+        margin-bottom: 5px; }
+      .content .people section article .title {
+        height: 20px;
+        font: 15px/1 'Gudea';
+        margin-bottom: 5px; }
+      .content .people section article .location {
+        height: 20px;
+        font: 15px/1 'Gudea';
+        color: #888; }
+      .content .people section article p {
+        font: 10px/1.2 "arial";
+        color: #777;
+        margin-bottom: 15px; }
+
 #vidGallery {
   width: 100%;
   padding: 100px; }
@@ -500,7 +607,7 @@ a {
 
 #header {
   width: 100%;
-  background-color: #fff1f3; }
+  background-color: #E7A7A7; }
   #header .inner {
     width: 1180px;
     height: 120px;
@@ -520,10 +627,10 @@ a {
         left: 50px;
         transform: translateY(-60%);
         font-size: 20px;
-        color: #555; }
+        color: #f5f5f5; }
         #header .inner .logo > h1 a::after {
           content: '';
-          border-right: 2px solid #888;
+          border-right: 2px solid #f5f5f5;
           margin-left: 20px;
           font-size: 30px; }
     #header .inner .menuWeb #gnb {
@@ -541,7 +648,7 @@ a {
           position: relative;
           display: block;
           padding: 0px 20px;
-          color: #555;
+          color: #f5f5f5;
           font: bold 12px/1;
           transition: 0.5s; }
           #header .inner .menuWeb #gnb li a::after {
@@ -552,7 +659,7 @@ a {
             display: block;
             position: absolute;
             margin-top: 2px;
-            border-bottom: 1px solid #777;
+            border-bottom: 1px solid #f5f5f5;
             transition: all .3s ease; }
           #header .inner .menuWeb #gnb li a:hover::after {
             content: '';
@@ -562,7 +669,7 @@ a {
             display: block;
             position: absolute;
             margin-top: 2px;
-            border-bottom: 1px solid #777;
+            border-bottom: 1px solid #f5f5f5;
             transition: all .3s ease; }
     #header .inner .menuWeb .icons {
       position: absolute;
@@ -579,12 +686,11 @@ a {
           display: block;
           padding: 30px 10px;
           transition: 0.5s;
-          color: #555; }
+          color: #f5f5f5; }
           #header .inner .menuWeb .icons li a i {
             font-size: 17px; }
         #header .inner .menuWeb .icons li:hover a {
-          transform: scale(1.2);
-          color: #E7A7A7; }
+          transform: scale(1.2); }
     #header .inner .btnCall {
       position: absolute;
       top: 50%;
@@ -660,7 +766,7 @@ a {
           display: block;
           width: 100%;
           height: 2px;
-          background: #fff;
+          background: #f5f5f5;
           position: absolute;
           top: 0;
           left: 0;
@@ -670,7 +776,7 @@ a {
           display: block;
           width: 100%;
           height: 2px;
-          background: #fff;
+          background: #f5f5f5;
           position: absolute;
           top: 0;
           left: 0;
@@ -690,7 +796,7 @@ a {
           #header .inner .menuMo .util li a {
             display: block;
             font: 13px/1 'Amiri';
-            color: #fff;
+            color: #f5f5f5;
             padding: 0 15px;
             transition: 0.5s; }
           #header .inner .menuMo .util li:hover a {
@@ -710,7 +816,7 @@ a {
             display: block;
             padding: 30px 15px;
             transition: 0.5s;
-            color: #fff; }
+            color: #f5f5f5; }
             #header .inner .menuMo .icons li a i {
               font-size: 22px; }
           #header .inner .menuMo .icons li:hover a {
@@ -735,7 +841,7 @@ a {
 
 #visual {
   width: 100%;
-  background: #fff1f3; }
+  background: #E7A7A7; }
   #visual .inner {
     width: 1180px;
     height: calc(100vh - 120px);
@@ -743,7 +849,7 @@ a {
     position: relative; }
     #visual .inner #popup {
       width: 350px;
-      background: #fff;
+      background: #f5f5f5;
       padding: 30px;
       box-sizing: border-box;
       color: #000;
@@ -786,7 +892,7 @@ a {
       padding: 80px 0px 0px 70px; }
       #visual .inner .main_text h1 {
         font: 120px/1 'Archivo Black';
-        color: #333; }
+        color: #efefef; }
       #visual .inner .main_text #slider {
         width: 1060px;
         height: 120px;
@@ -838,7 +944,7 @@ section {
 
 #footer {
   width: 100%;
-  background: #fff; }
+  background: #f5f5f5; }
   #footer .inner {
     width: 1180px;
     margin: 0 auto;
