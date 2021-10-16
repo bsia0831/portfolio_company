@@ -1,0 +1,24 @@
+@charset "utf-8";
+.faq{
+    .inner{
+        .left{
+            >a{
+                display: block;
+                font: 30px/1 'Scheherazade New';
+                text-align: left;
+                margin-left: 60px;
+                margin-bottom: 20px;
+                color: #e7dcdc;
+
+                &:nth-child(1){
+                    color: #e7dcdc!important; 
+                }
+
+                &:nth-child(2){
+                    color: #595f70;
+                }
+            }
+            
+        }
+    }
+}
