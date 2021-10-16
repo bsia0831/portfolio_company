@@ -640,8 +640,8 @@ a {
       color: #db6b6b;
       transition: all 0.5s; }
 .community .inner .right {
-  float: left;
-  width: 826px; }
+  float: right;
+  width: 60%; }
   .community .inner .right table {
     width: 100%;
     border-collapse: collapse; }
@@ -983,17 +983,59 @@ a {
     #vidGallery article .con {
       width: 50%; }
 
-.faq .inner .left > a {
-  display: block;
-  font: 30px/1 'Scheherazade New';
-  text-align: left;
-  margin-left: 60px;
-  margin-bottom: 20px;
-  color: #e7dcdc; }
-  .faq .inner .left > a:nth-child(1) {
-    color: #e7dcdc !important; }
-  .faq .inner .left > a:nth-child(2) {
-    color: #595f70; }
+.faq {
+  padding-bottom: 200px; }
+  .faq .inner {
+    width: 1180px; }
+    .faq .inner .left {
+      float: left;
+      width: 30%;
+      transition: all 0.5s; }
+      .faq .inner .left ::after {
+        content: '';
+        display: block;
+        clear: both; }
+      .faq .inner .left > a {
+        display: block;
+        font: 30px/1 'Scheherazade New';
+        text-align: left;
+        margin-left: 60px;
+        margin-bottom: 20px;
+        color: #e7dcdc; }
+        .faq .inner .left > a:nth-child(1) {
+          color: #e7dcdc !important; }
+        .faq .inner .left > a:nth-child(2) {
+          color: #595f70; }
+        .faq .inner .left > a:hover {
+          color: #db6b6b !important;
+          transition: all 0.5s !important; }
+    .faq .inner .right {
+      float: right;
+      width: 60%; }
+      .faq .inner .right .wrap {
+        width: 100%; }
+        .faq .inner .right .wrap dt {
+          width: 100%;
+          padding: 20px 0px 10px 0;
+          font: 20px/1 'Scheherazade New';
+          color: #595f70;
+          border-bottom: 2px solid #595f70;
+          cursor: pointer;
+          transition: 0.5s; }
+          .faq .inner .right .wrap dt i {
+            position: absolute;
+            right: 10px;
+            transition: all 0.5s; }
+          .faq .inner .right .wrap dt.on i {
+            transform: rotate(-180deg);
+            transition: all 0.5s; }
+        .faq .inner .right .wrap dd {
+          width: 100%;
+          padding: 20px;
+          font: 18px/1.3 'Scheherazade New';
+          color: #595f70;
+          display: none;
+          margin-top: 20px; }
 
 #header_sub_community {
   width: 100%;
@@ -1250,8 +1292,8 @@ a {
       color: #db6b6b;
       transition: all 0.5s; }
 .community .inner .right {
-  float: left;
-  width: 826px; }
+  float: right;
+  width: 60%; }
   .community .inner .right table {
     width: 100%;
     border-collapse: collapse; }
