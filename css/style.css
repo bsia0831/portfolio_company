@@ -764,7 +764,8 @@ a {
 
 #gallery {
   width: 100%;
-  padding: 10px; }
+  padding: 10px;
+  transition: all .3s; }
   #gallery ul {
     width: 100%; }
     #gallery ul::after {
@@ -778,27 +779,32 @@ a {
       #gallery ul li .inner {
         width: 100%;
         box-sizing: border-box;
-        background: #fff1f3;
+        background: #E7A7A7;
         border-radius: 6px; }
         #gallery ul li .inner a {
           display: block;
           width: 100%; }
           #gallery ul li .inner a img {
             width: 100%;
-            height: 230px; }
+            height: 230px;
+            transition: all .3s; }
+          #gallery ul li .inner a:hover img {
+            filter: grayscale(0); }
         #gallery ul li .inner p {
           font: bold 25px/1.2 'Teko';
           letter-spacing: 1px;
-          color: #000;
+          color: #efefef;
           margin: 15px 0; }
           #gallery ul li .inner p::after {
             position: absolute;
             content: "";
             width: 100%;
             height: 2px;
-            background: #000;
+            background: #efefef;
             left: 0;
             bottom: 0; }
+  #gallery:hover img {
+    filter: grayscale(1); }
 
 .pop {
   width: 100%;
