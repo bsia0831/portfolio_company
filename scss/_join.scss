@@ -1,1 +1,205 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap');
+
+.join{
+    .inner{
+        width: 1180px;
+        h2{
+            font: 80px/1 'Heebo';
+            color: #efefef;
+            margin-bottom: 80px;
+            letter-spacing: 7px;
+
+            &::after{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                background: #efefef;
+                position: absolute;
+                left: 0;
+                transform: rotate(0deg);
+                transition: top 0.5s 0s, transform 0.5s 0.5s;
+                margin-top: 10px;
+            }
+        }
+
+        fieldset{
+            border: none;
+            h3{
+                font: 20px/1 'Heebo';
+                color: #efefef;
+                margin-bottom: 20px;
+            }
+    
+            #terms{
+                width: 100%;
+                height: 200px;
+                resize: none;
+                padding: 5px 20px;
+                box-sizing: border-box;
+                background-color: #E7A7A7;
+                color: #efefef;
+                margin-bottom: 10px;
+                border-color: #efefef;
+            }
+    
+            .agreement{
+                margin-bottom: 70px;
+    
+                label[for="agree"]{
+                    font-size: 15px;
+                    color: #efefef;
+                }
+            }
+    
+            table{
+                width: 100%;
+                border-top: 2px solid #efefef;
+                border-collapse: collapse;
+    
+                th{
+                    width: 18%;
+                    text-align: left;
+                    font: bold 14px/1 'Heebo';
+                    color: #efefef;
+                    background-color: #E7A7A7;
+                    border-right: 1px solid #efefef;
+                    padding: 20px 0;
+                    
+                    &:last-child{ 
+                        border-right: none;
+                        border-bottom: none;
+                        text-align: center;    
+                        background: #E7A7A7;
+                        font-size: 0;
+                        border-top: 2px solid #efefef;
+                    }
+                }
+    
+                td{
+                    border-bottom: 1px solid #efefef;
+                    padding: 20px 30px;
+                }
+    
+                input[type=submit], input[type=reset]{
+                    width: 150px;
+                    height: 40px;
+                    border: none;
+                    background-color: #E7A7A7;
+                    font: bold 14px/40px 'arial';
+                    color: #efefef; 
+                    margin: 0 10px;
+                    cursor: pointer;
+                    border: 1px solid #efefef;
+                }
+    
+                input[type=text], input[type=password]{
+                    width: 30%;
+                    height: 30px;
+                    border: 1px solid #bbb;
+                    background-color: #eeffff;
+                    padding-left: 20px;
+                }
+    
+                input[type=checkbox], input[type=radio]{
+                    margin-right: 10px;
+                }
+    
+                label{
+                    margin-right: 30px;
+                }
+    
+                select{
+                    width: 20%;
+                    height: 30px;
+                    border: 1px solid #bbb;
+                    background-color: #eeffff;
+                    padding-left: 20px;
+                }
+    
+                #comments{
+                    width: 80%;
+                    height: 100px;
+                    resize: none;
+                    border: 1px solid #bbb;
+                    background-color: #eeffff;
+                    padding: 20px;
+                    box-sizing: border-box;
+                }
+    
+                .hobbyTxt, .genderTxt{
+                    font: 12px/1 'Heebo';
+                    color: #efefef;
+                    margin-top: 10px;
+                    display: none;
+                }
+        }
+
+
+        }
+    }
+}
+
+/*tablet --------------------------------------------------*/
+@media screen and (max-width:$tablet) {
+    .join{    
+        .inner{
+            table{
+                th{
+                    display: none;
+
+    
+                    &:last-child{ 
+                        display: block;
+                        width: 100%;
+                    }
+                }
+    
+                input[type=text], input[type=password]{
+                    width: 50%;
+                }
+
+                select{
+                    width: 35%;
+                }
+    
+                #comments{
+                    width: 90%;
+                }
+    
+                .hobbyTxt, .genderTxt{
+                    display: block;
+                }
+    
+            }
+        }
+    }
+}
+
+/*mobile --------------------------------------------------*/
+@media screen and (max-width:$mobile) {
+    .join{    
+        .inner{
+            table{
+                input[type=submit], input[type=reset]{
+                    width: 40%;
+                    margin: 0 5%;
+                }
+    
+                input[type=text], input[type=password]{
+                    width: 100%;
+                }
+
+                select{
+                    width: 100%;
+                    margin-top: 10px;
+                }
+    
+                #comments{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

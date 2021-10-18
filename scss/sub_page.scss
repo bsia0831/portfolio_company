@@ -16,7 +16,7 @@
         .logo{
             position: absolute;
             top: 50%;
-            left: 50px;
+            left: 0px;
             transform: translateY(-50%);
             
             img{
@@ -35,7 +35,7 @@
                 &::after{
                     content: '';
                     border-right: 2px solid #efefef;
-                    margin-left: 20px;
+                    margin-left: 40px;
                     font-size: 30px;
                 }
             }
