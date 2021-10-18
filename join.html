@@ -74,41 +74,51 @@
     <section class="content join">
         <div class="inner">
             <h2>JOIN</h2>
-            <!-- 서브페이지 컨텐츠 들어가는 부분 -->
+
             <form action="/" method="post">
                 <fieldset>
                     <legend class="hidden">회원가입양식폼</legend>
 
-                    <h3>Personal INFORMATION</h3>
-                    <table summary="회원의 아이디, 비밀번호, 성벼르 취미 입력양식폼">
+                    <h3>Personal Information</h3>
+                    <table summary="회원의 필수입력 이메일, 아이디, 비밀번호, 이름, 영어이름, 주소, 핸드폰번호, 나라, sms 동의, email 동의 입력양식폼">
                         <caption class="hidden">회원정보 입력양식 테이블</caption>
+                        <tr>
+                            <th scope="row"><label for="email">E-mail</label></th>
+                            <td>
+                                <input type="text" name="email" id="email" required>
+                                <label for="email">Enter your email address to use as login ID</label>
+                            </td>
+                        </tr>
                         <tr>
                             <th scope="row"><label for="userid">USER ID</label></th>
                             <td>
-                                <input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요" required><input type="button" value="중복확인">
+                                <input type="text" name="userid" id="userid">
+                                <label for="userid">ID must be between 4 and 16 characters and contain lowercase letters and numbers.</label>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row"><label for="pwd">PASSWORD</label></th>
                             <td>
-                                <input type="password" name="pwd" id="pwd" placeholder="10자 이상, 영문 대소문자, 숫자 중 2가지 이상 조합
-                                " required>
+                                <input type="password" name="pwd" id="pwd" required>
+                                <label for="pwd">Password must be between 8 and 16 characters and contain at least two of the following.</label>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row"><label for="pwd2">RE PASSWORD</label></th>
                             <td>
-                                <input type="password" name="pwd2" id="pwd2" placeholder="재입력 입력해주세요" required>
+                                <input type="password" name="pwd2" id="pwd2" required>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row"><label for="name">NAME</label></th>
                             <td>
-                                <input type="text" name="name" id="name" placeholder="이름을 입력해주세요" required>
-                                <select name="foreigner" id="foreigner">
-                                    <option value="naver">내국인</option>
-                                    <option value="nate">외국인</option>
-                                </select>
+                                <input type="text" name="name" id="name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="en_name">English NAME</label></th>
+                            <td>
+                                <input type="text" name="en_name" id="en_name" required>
                             </td>
                         </tr>
                         <tr>
@@ -116,8 +126,42 @@
                             <td>
                                 <input type="text" name="address" id="address" required>
                                 <input type="text" name="address" id="address" required>
-                                <input type="button" value="주소검색"><br>
-                                <input type="text" name="address" id="address" required>
+                                <input type="button" value="Search" id="address_btn"><br>
+                                <input type="text" name="address" id="address3" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="phone">English NAME</label></th>
+                            <td>
+                                <input type="text" name="phone" id="phone" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="sms_agree">SMS Service</label></th>
+                            <td>
+                                <label for="sms_agree" id="lbl_agree">Sign-up for SMS alert to receive the latest updates and special offers.</label><br>
+                                <input type="radio" name="sms_agree" id="sms_agree"><label>Yes</label>
+                                <input type="radio" name="sms_agree" id="sms_agree"><label>No</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="email_agree">E-mail Service</label></th>
+                            <td id="agreement">
+                                <label for="email_agree" id="lbl_agree">Sign-up for SMS alert to receive the latest updates and special offers.</label><br>
+                                <input type="radio" name="email_agree" id="email_agree"><label>Yes</label>
+                                <input type="radio" name="email_agree" id="email_agree"><label>No</label>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3>Additional Information</h3>
+                    <table summary="회원의 아이디, 비밀번호, 성별 취미 입력양식폼">
+                        <caption class="hidden">회원정보 입력양식 테이블</caption>
+
+                        <tr>
+                            <th scope="row"><label for="nickname">Nickname</label></th>
+                            <td>
+                                <input type="text" name="nickname" id="nickname">
                             </td>
                         </tr>
                         <tr>
@@ -148,21 +192,16 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row"><label for="email">E-MAIL</label></th>
+                            <th scope="row"><label for="birth">Date of Birth</label></th>
                             <td>
-                                <input type="text" name="email" id="email" placeholder="이메일주소를 입력해주세요.">@
-                                <select name="company" id="company">
-                                    <option value="naver">naver.com</option>
-                                    <option value="nate">nate.com</option>
-                                    <option value="daum">daum.net</option>
-                                </select>
+                                <input type="text" name="birth" id="birth">
                             </td>
                         </tr>
                         <tr>
                             <th scope="row"><label for="comments">COMMENTS</label></th>
                             <td>
                                 <textarea name="comments" id="comments" cols="30" rows="10"
-                                    placeholder="코멘트를 입력해 주세요."></textarea>
+                                    placeholder= "Enter your comments"></textarea>
                             </td>
                         </tr>
                     </table>

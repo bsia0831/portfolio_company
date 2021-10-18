@@ -825,17 +825,6 @@ a {
     color: #efefef;
     margin-bottom: 80px;
     letter-spacing: 7px; }
-    .join .inner h2::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 2px;
-      background: #efefef;
-      position: absolute;
-      left: 0;
-      transform: rotate(0deg);
-      transition: top 0.5s 0s, transform 0.5s 0.5s;
-      margin-top: 10px; }
   .join .inner fieldset {
     border: none; }
     .join .inner fieldset h3 {
@@ -860,7 +849,11 @@ a {
     .join .inner fieldset table {
       width: 100%;
       border-top: 2px solid #efefef;
-      border-collapse: collapse; }
+      border-bottom: 2px solid #efefef;
+      border-collapse: collapse;
+      margin-bottom: 120px;
+      color: #efefef;
+      font: 14px/1 'Heebo'; }
       .join .inner fieldset table th {
         width: 18%;
         text-align: left;
@@ -869,32 +862,33 @@ a {
         background-color: #E7A7A7;
         border-right: 1px solid #efefef;
         padding: 20px 0; }
-        .join .inner fieldset table th:last-child {
-          border-right: none;
-          border-bottom: none;
-          text-align: center;
-          background: #E7A7A7;
-          font-size: 0;
-          border-top: 2px solid #efefef; }
       .join .inner fieldset table td {
         border-bottom: 1px solid #efefef;
         padding: 20px 30px; }
-      .join .inner fieldset table input[type=submit], .join .inner fieldset table input[type=reset] {
-        width: 150px;
-        height: 40px;
-        border: none;
-        background-color: #E7A7A7;
-        font: bold 14px/40px 'arial';
+      .join .inner fieldset table:last-child {
+        border-bottom: 2px solid #efefef; }
+      .join .inner fieldset table #address {
+        width: 130px; }
+      .join .inner fieldset table #address_btn {
+        font: 16px/1 'Heebo';
         color: #efefef;
-        margin: 0 10px;
+        background-color: #E7A7A7;
+        border: 1px solid #efefef;
+        padding: 5px 15px;
         cursor: pointer;
-        border: 1px solid #efefef; }
+        transition: all 0.4s; }
+        .join .inner fieldset table #address_btn:hover {
+          color: #E7A7A7;
+          background: #efefef; }
+      .join .inner fieldset table #address3 {
+        margin-top: 10px; }
       .join .inner fieldset table input[type=text], .join .inner fieldset table input[type=password] {
         width: 30%;
         height: 30px;
-        border: 1px solid #bbb;
-        background-color: #eeffff;
-        padding-left: 20px; }
+        border: 1px solid #efefef;
+        background-color: #E7A7A7;
+        padding-left: 20px;
+        margin-right: 10px; }
       .join .inner fieldset table input[type=checkbox], .join .inner fieldset table input[type=radio] {
         margin-right: 10px; }
       .join .inner fieldset table label {
@@ -909,15 +903,34 @@ a {
         width: 80%;
         height: 100px;
         resize: none;
-        border: 1px solid #bbb;
-        background-color: #eeffff;
+        border: 1px solid #efefef;
+        background-color: #E7A7A7;
         padding: 20px;
         box-sizing: border-box; }
+        .join .inner fieldset table #comments::placeholder {
+          color: #efefef; }
       .join .inner fieldset table .hobbyTxt, .join .inner fieldset table .genderTxt {
         font: 12px/1 'Heebo';
         color: #efefef;
         margin-top: 10px;
         display: none; }
+  .join .inner .btn_area {
+    width: 100%;
+    margin: 0 420px 70px; }
+    .join .inner .btn_area input[type=submit], .join .inner .btn_area input[type=reset] {
+      width: 150px;
+      height: 40px;
+      border: none;
+      background-color: #E7A7A7;
+      font: bold 14px/40px 'arial';
+      color: #efefef;
+      margin: 0 10px;
+      cursor: pointer;
+      border: 1px solid #efefef;
+      transition: all 0.4s; }
+      .join .inner .btn_area input[type=submit]:hover, .join .inner .btn_area input[type=reset]:hover {
+        color: #E7A7A7;
+        background: #efefef; }
 
 /*tablet --------------------------------------------------*/
 @media screen and (max-width: 1179px) {
