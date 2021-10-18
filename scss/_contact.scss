@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+.contact {
+    padding-bottom: 200px;
+
+    .inner {
+        width: 1180px;
+
+        .left {
+            float: left;
+            width: 30%;
+            transition: all 0.5s;
+
+            ::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            >a {
+                display: block;
+                font: 30px/1 'Scheherazade New';
+                text-align: left;
+                margin-left: 60px;
+                margin-bottom: 20px;
+                color: #e7dcdc;
+
+                &:nth-child(1) {
+                    color: #e7dcdc !important;
+                }
+
+                &:nth-child(2) {
+                    color: #e7dcdc !important;
+                }
+
+                &:nth-child(3) {
+                    color: #595f70;
+                }
+
+                &:hover {
+                    color: #db6b6b !important;
+                    transition: all 0.5s !important;
+                }
+            }
+
+        }
+
+        .right {
+            float: right;
+            width: 60%;
+            margin-top: -35px;
+
+            .wrap {
+                width: 100%;
+
+                .form_group {
+                    position: relative;
+                    padding: 25px 100px 0;
+                    margin-top: 10px;
+                    width: 100%;
+
+                    .form_field {
+                        font-family: inherit;
+                        width: 100%;
+                        border: 0;
+                        border-bottom: 2px solid #595f70;
+                        outline: 0;
+                        font-size: 1.3rem;
+                        color: #e7dcdc;
+                        padding: 7px 0;
+                        background: transparent;
+                        transition: border-color 0.2s;
+
+                        &::placeholder {
+                            color: transparent;
+                        }
+
+                        &:placeholder-shown ~ .form_label{
+                            font-size: 1.3rem;
+                            cursor: text;
+                            top: 20px;
+                        }
+
+                        &:focus {
+                            ~.form_label {
+                                position: absolute;
+                                top: 0;
+                                display: block;
+                                transition: 0.2s;
+                                font-size: 1rem;
+                                color: #db6b6b;
+                                font-weight: 700;
+                            }
+
+                            padding-bottom: 6px;
+                            font-weight: 700;
+                            border-width: 3px;
+                            border-image: linear-gradient(to right, #db6b6b, #db6b6b);
+                            border-image-slice: 1;
+                        }
+
+                        &:required, &:invalid {
+                            box-shadow: none;
+                        }
+                    }
+
+                    .form_label {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        transition: 0.2s;
+                        font-size: 1rem;
+                        color: #595f70;
+                    }
+
+                    .submit{
+                        position: relative;
+                        padding: 20px 224px;
+                        border: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                        outline: none;
+                        font-size: 20px;
+                        color: #595f70;
+
+                        &::after, &::before{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 100%;
+                            height: 2px;
+                            background-color: #595f70;
+                            transition: all 0.3s ease;
+                        }
+
+                        &:hover{
+                            color: #db6b6b;
+                            &::before{
+                                top: 0;
+                                transform: scale(1);
+                                background-color: #db6b6b;
+                            }
+
+                            &::after{
+                                transform: scale(1);
+                                background-color: #db6b6b;
+                            }
+                        }
+
+
+                    }
+                }
+                
+
+
+
+            }
+        }
+    }
+}
