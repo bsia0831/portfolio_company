@@ -499,6 +499,10 @@
             width: 510px;
             margin: 0 auto;
 
+            &::placeholder{
+                color: #595f70;
+            }
+
             input{
                 width: 100%;
                 border: 0;
@@ -516,6 +520,10 @@
                 border: 0;
                 background: #E7A7A7;
                 margin-left: -30px;
+
+                i{
+                    color: #595f70;
+                }
             }
         }
     }
