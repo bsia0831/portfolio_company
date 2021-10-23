@@ -446,7 +446,14 @@ section{
     }
 
     
-    &#brand{background:#eee;   
+    &#brand{
+        background:#eee;  
+        transition: all 2s;
+
+        &.on{
+            background: #c23131;
+        } 
+
         .inner{
             .wrap{
                 width:100%; 

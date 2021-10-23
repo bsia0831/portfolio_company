@@ -43,8 +43,6 @@ $(window).on("scroll", function () {
             $boxs.removeClass("on");
             //해당 영역 박스만 활성화 
             $boxs.eq(i).addClass("on");
-
-
         }
     }
 

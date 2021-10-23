@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
+    <script defer src="js/MemberScroll.js"></script>
 </head>
 
 <body>
@@ -68,14 +69,14 @@
         </div>
     </header>
 
-    <section class="content">
+    <section id="values">
         <div class="inner">
-            <div class="values_text">
-                <h1>
-                    VALUES<br>THAT DRIVE<br>OUR WORK
-                </h1>
+            <div id="values_text">
+                <h1> VALUES </h1>
+                <h1>THAT DRIVE</h1>
+                <h1>OUR WORK</h1>
             </div>
-            <div class="values_list">
+            <div id="values_list"  class="myScroll">
                 <ul class="list">
                     <li>
                         <div class="num">01</div>
@@ -105,127 +106,93 @@
                             Meeting new people, hearing their stories, and building bridges bring us joy.
                         </div>
                     </li>
-                    <li>
-                        <div class="num">04</div>
-                        <div class="left_text">
-                            Use your powers
-                            for good
-                        </div>
-                        <div class="right_text">
-                            We use our creative powers to help others create positive change in the world.
-                        </div>
-                    </li>
-                    <li>
-                        <div class="num">05</div>
-                        <div class="left_text">
-                            Never stop learning
-                        </div>
-                        <div class="right_text">
-                            Curiosity and a hunger for new knowledge drive our continuous education.
-                        </div>
-                    </li>
-                    <li>
-                        <div class="num">06</div>
-                        <div class="left_text">
-                            We say what we think
-                        </div>
-                        <div class="right_text">
-                            Honesty, openness, and trust create strong partnerships.
-                        </div>
-                    </li>
                 </ul>
             </div>
-            <div class="people">
-                <div class="people_text">
-                    <h1>OUR <br>PEOPLE</h1>
-                    <p>With headquarters in Tel Aviv, we leverage global talent by partnering with creatives all over
-                        the
-                        world. The benefit to you? A team of top talent supporting your goals each step of the way.</p>
-                </div>
-                <section>
-                    <article>
-                        <div>
-                            <img src="/img/member1_gray.jpeg" onmouseover="this.src='/img/member1.png'"
-                                onmouseleave="this.src='/img/member1_gray.jpeg'" />
-                        </div>
-                        <h4>Karina Chocron</h4>
-                        <div class="title">Founder and Chief Creative Strategist</div>
-                        <div class="location">Tel Aviv</div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="/img/member2_gray.jpeg" onmouseover="this.src='/img/member2.png'"
-                                onmouseleave="this.src='/img/member2_gray.jpeg'" />
-                        </div>
-                        <h4>Lotem Levi</h4>
-                        <div class="title">Visual Designer and Illustrator</div>
-                        <div class="location">Tel Aviv</div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="/img/member3_gray.jpeg" onmouseover="this.src='/img/member3.png'"
-                                onmouseleave="this.src='/img/member3_gray.jpeg'" />
-                        </div>
-                        <h4>Lily Lozovsky</h4>
-                        <div class="title">Communications and Fundraising</div>
-                        <div class="location">Jerusalem</div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="/img/member4_gray.jpeg" onmouseover="this.src='/img/member4.png'"
-                                onmouseleave="this.src='/img/member4_gray.jpeg'" />
-                        </div>
-                        <h4>Judith Jaroslavsky</h4>
-                        <div class="title">UX/UI Designer</div>
-                        <div class="location">Tel Aviv</div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="/img/member5_gray.jpeg" onmouseover="this.src='/img/member5.png'"
-                                onmouseleave="this.src='/img/member5_gray.jpeg'" />
-                        </div>
-                        <h4>Rachel Feldman</h4>
-                        <div class="title">UX/UI Designer</div>
-                        <div class="location">Tel Aviv</div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="/img/member6_gray.jpeg" onmouseover="this.src='/img/member6.png'"
-                                onmouseleave="this.src='/img/member6_gray.jpeg'" />
-                        </div>
-                        <h4>Gadi Yosef</h4>
-                        <div class="title">Photography and Videography</div>
-                        <div class="location">Tel Aviv</div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="/img/member7_gray.jpeg" onmouseover="this.src='/img/member7.png'"
-                                onmouseleave="this.src='/img/member7_gray.jpeg'" />
-                        </div>
-                        <h4>Rachel Sales</h4>
-                        <div class="title">Super Creative Content Writer</div>
-                        <div class="location">New York</div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="/img/member8_gray.jpeg" onmouseover="this.src='/img/member8.png'"
-                                onmouseleave="this.src='/img/member8_gray.jpeg'" />
-                        </div>
-                        <h4>Mickey Noam-Alon</h4>
-                        <div class="title">Humanitarian Communications Advisor</div>
-                        <div class="location">Rehovot</div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="/img/member9_gray.jpeg" onmouseover="this.src='/img/member9.png'"
-                                onmouseleave="this.src='/img/member9_gray.jpeg'" />
-                        </div>
-                        <h4>Michelle Chiprut</h4>
-                        <div class="title">Graphic Designer</div>
-                        <div class="location">Panama</div>
-                    </article>
-                </section>
+        </div>
+    </section>
+
+    <section id="people" class="myScroll">
+        <div class="inner">
+            <div class="people_text">
+                <h1>OUR <br>PEOPLE</h1>
+                <p>With headquarters in Tel Aviv, we leverage global talent by partnering with creatives all over
+                    the
+                    world. The benefit to you? A team of top talent supporting your goals each step of the way.</p>
             </div>
+            <section>
+                <article>
+                    <div>
+                        <img src='/img/member1.png' />
+                    </div>
+                    <h4>Karina Chocron</h4>
+                    <div class="title">Founder and Chief Creative Strategist</div>
+                    <div class="location">Tel Aviv</div>
+                </article>
+                <article>
+                    <div>
+                        <img src='/img/member2.png' />
+                    </div>
+                    <h4>Lotem Levi</h4>
+                    <div class="title">Visual Designer and Illustrator</div>
+                    <div class="location">Tel Aviv</div>
+                </article>
+                <article>
+                    <div>
+                        <img src='/img/member3.png' />
+                    </div>
+                    <h4>Lily Lozovsky</h4>
+                    <div class="title">Communications and Fundraising</div>
+                    <div class="location">Jerusalem</div>
+                </article>
+                <article>
+                    <div>
+                        <img src='/img/member4.png' />
+                    </div>
+                    <h4>Judith Jaroslavsky</h4>
+                    <div class="title">UX/UI Designer</div>
+                    <div class="location">Tel Aviv</div>
+                </article>
+                <article>
+                    <div>
+                        <img src='/img/member5.png' />
+                    </div>
+                    <h4>Rachel Feldman</h4>
+                    <div class="title">UX/UI Designer</div>
+                    <div class="location">Tel Aviv</div>
+                </article>
+                <article>
+                    <div>
+                        <img src='/img/member6.png' />
+                    </div>
+                    <h4>Gadi Yosef</h4>
+                    <div class="title">Photography and Videography</div>
+                    <div class="location">Tel Aviv</div>
+                </article>
+                <article>
+                    <div>
+                        <img src='/img/member7.png' />
+                    </div>
+                    <h4>Rachel Sales</h4>
+                    <div class="title">Super Creative Content Writer</div>
+                    <div class="location">New York</div>
+                </article>
+                <article>
+                    <div>
+                        <img src='/img/member8.png' />
+                    </div>
+                    <h4>Mickey Noam-Alon</h4>
+                    <div class="title">Humanitarian Communications Advisor</div>
+                    <div class="location">Rehovot</div>
+                </article>
+                <article>
+                    <div>
+                        <img src='/img/member9.png' />
+                    </div>
+                    <h4>Michelle Chiprut</h4>
+                    <div class="title">Graphic Designer</div>
+                    <div class="location">Panama</div>
+                </article>
+            </section>
         </div>
     </section>
 
@@ -296,6 +263,10 @@
             </div>
         </div>
     </footer>
+    <ul id="navi">
+        <li><a href="#values_list" class="on"></a></li>
+        <li><a href="#news"></a></li>
+    </ul>
 
 </body>
 
