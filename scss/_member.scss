@@ -36,6 +36,7 @@
 
     .inner {
         width: 1180px;
+        margin: 0 auto;
 
 
         #values_text {
@@ -125,7 +126,7 @@
 }
 
 #people {
-    transition: all 5s;
+    transition: all 3s;
     width: 100%;
     background: #E7A7A7;
 
@@ -135,6 +136,8 @@
 
     .inner {
         width: 1180px;
+        margin: 0 auto;
+        padding: 200px 0;
 
         .people_text {
             width: 100%;

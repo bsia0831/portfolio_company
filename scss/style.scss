@@ -362,7 +362,7 @@ $mobile:539px;
             padding: 30px; box-sizing: border-box;
             color: #000;
             position: absolute;
-            top: 60%; left: 50%; transform: translate(-50%, -80%);
+            top: 50%; left: 50%; transform: translate(-50%, -80%);
         
             .popup_content{
                 width: 100%; min-height: 270px;
@@ -427,10 +427,11 @@ $mobile:539px;
     }
 }
 
-section{
+>section{
     width:100%; 
     padding:200px 0; 
     overflow:hidden; 
+    background: #E7A7A7;
     .inner{
         width:1180px; 
         min-height:300px; 
@@ -445,14 +446,17 @@ section{
         }
     }
 
+    &#news{
+        transition: all 3s;
+        &.on{
+            background: #efefef;
+        }
+    }
+
     
     &#brand{
-        background:#eee;  
+        background:#E7A7A7;  
         transition: all 2s;
-
-        &.on{
-            background: #c23131;
-        } 
 
         .inner{
             .wrap{
