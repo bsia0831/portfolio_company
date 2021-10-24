@@ -891,47 +891,47 @@ a {
         top: 50%;
         transform: translateY(-50%);
         right: 0; }
-    #people .inner section {
+    #people .inner #people_photo {
       width: 100%;
       padding-top: 70px;
       padding-bottom: 0; }
-      #people .inner section::after {
+      #people .inner #people_photo::after {
         content: "";
         display: block;
         clear: both; }
-      #people .inner section article {
+      #people .inner #people_photo article {
         width: calc(100% / 3);
         float: left;
         padding: 15px; }
-        #people .inner section article div {
+        #people .inner #people_photo article div {
           width: 360px;
           height: 530px;
           overflow: hidden; }
-        #people .inner section article img {
+        #people .inner #people_photo article img {
           width: 100%;
           height: 100%;
           position: relative;
           transition: all 0.5s;
           filter: grayscale(1); }
-          #people .inner section article img:hover {
+          #people .inner #people_photo article img:hover {
             filter: grayscale(0);
             transform: scale(1.1);
             transition: all 0.5s; }
-        #people .inner section article h4 {
+        #people .inner #people_photo article h4 {
           margin-top: 15px;
           font: bold 24px/1 'Gudea';
           letter-spacing: 1px;
           color: #000;
           margin-bottom: 5px; }
-        #people .inner section article .title {
+        #people .inner #people_photo article .title {
           height: 20px;
           font: 15px/1 'Gudea';
           margin-bottom: 5px; }
-        #people .inner section article .location {
+        #people .inner #people_photo article .location {
           height: 20px;
           font: 15px/1 'Gudea';
           color: #888; }
-        #people .inner section article p {
+        #people .inner #people_photo article p {
           font: 10px/1.2 "arial";
           color: #777;
           margin-bottom: 15px; }
@@ -1419,35 +1419,35 @@ a {
           width: 100%;
           height: calc(100% * 3); }
 
-> section {
+section {
   width: 100%;
   padding: 200px 0;
   overflow: hidden;
   background: #E7A7A7; }
-  > section .inner {
+  section .inner {
     width: 1180px;
     min-height: 300px;
     margin: 0 auto;
     position: relative; }
-    > section .inner h1 {
+    section .inner h1 {
       font: bold 15px/1 'arial';
       color: #666;
       text-align: center;
       margin-bottom: 50px; }
-  > section#news {
+  section#news {
     transition: all 3s; }
-    > section#news.on {
+    section#news.on {
       background: #efefef; }
-  > section#brand {
+  section#brand {
     background: #E7A7A7;
     transition: all 2s; }
-    > section#brand .inner .wrap {
+    section#brand .inner .wrap {
       width: 100%; }
-      > section#brand .inner .wrap::after {
+      section#brand .inner .wrap::after {
         content: '';
         display: block;
         clear: both; }
-      > section#brand .inner .wrap article {
+      section#brand .inner .wrap article {
         width: 280px;
         height: 200px;
         margin-right: 20px;
@@ -1456,13 +1456,13 @@ a {
         transition: 0.5s;
         opacity: 0;
         transform: translateY(100px); }
-        > section#brand .inner .wrap article:nth-of-type(1) {
+        section#brand .inner .wrap article:nth-of-type(1) {
           transition-delay: 0s; }
-        > section#brand .inner .wrap article:nth-of-type(2) {
+        section#brand .inner .wrap article:nth-of-type(2) {
           transition-delay: 0.2s; }
-        > section#brand .inner .wrap article:nth-of-type(3) {
+        section#brand .inner .wrap article:nth-of-type(3) {
           transition-delay: 0.4s; }
-        > section#brand .inner .wrap article:nth-of-type(4) {
+        section#brand .inner .wrap article:nth-of-type(4) {
           transition-delay: 0.6s;
           margin-right: 0; }
 
