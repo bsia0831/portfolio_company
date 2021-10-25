@@ -4,9 +4,11 @@ $.ajax({
     data: {
         part: "snippet",
         key: "AIzaSyDecgEaI4ClJpBehW8ABU-cHevtQhXlThI",
-        maxResults: 5,
-        playlistId: "PLY0mI6VcY3Yg5TR5noLNpoNOhoK4yjtdB"
+        maxResults: 9,
+        playlistId: "PLY0mI6VcY3Yg5TR5noLNpoNOhoK4yjtdB",
+        
     }
+
 })
 .success(function (data) {
 // console.log(data); 
@@ -38,15 +40,15 @@ $(items).each(function (index, data) {
                 })
                 .append(
                     $("<img>").attr({
-                        src: data.snippet.thumbnails.high.url
+                        src: data.snippet.thumbnails.medium.url
                     })
                 ),
-                $("<div class='con'>")
-                .append(
-                    $("<h2>").text(data.snippet.title),
-                    $("<p>").text(txt),
-                    $("<span>").text(date)
-                )
+                // $("<div class='con'>")
+                // .append(
+                //     $("<h2>").text(data.snippet.title),
+                //     $("<p>").text(txt),
+                //     $("<span>").text(date)
+                // )
             )
         )
 });
@@ -77,6 +79,27 @@ $("body")
     )
 })
 
-$("body").on("click", ".pop span", function(){
-$(".pop").remove(); 
+$("body").on("click", "#vidGallery article a", function (e) {
+    e.preventDefault();
+
+    let vidId = $(this).attr("href");
+
+    $("body")
+        .append(
+            $("<div class='pop'>")
+            .append(
+                $("<iframe>")
+                .attr({
+                    src: "https://www.youtube.com/embed/" + vidId,
+                    frameborder: 0,
+                    width: "100%",
+                    height: 600
+                }),
+                $("<span>").text("close")
+            )
+        )
+});
+
+$("body").on("click", ".pop span", function () {
+    $(".pop").remove();
 });
