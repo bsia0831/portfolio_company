@@ -4,7 +4,7 @@ const $boxs = $(".myScroll");
 const $btns = $("#navi li");
 const $bg = $("#brand");
 let len = $btns.length; //4 
-let baseLine = -100;
+let baseLine = -10;
 /*
 baseLine : 
 해당영역이 브라우저 끝에 닿지 않아도 네비버튼 활성화, 영역 활성화되도록 값을 빼줌   
