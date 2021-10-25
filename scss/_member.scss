@@ -44,10 +44,10 @@
         #values_list {
             width: 100%;
             padding-top: 120px;
-            position: relative;
 
             .list {
                 width: 100%;
+                position: relative;
 
                 li {
                     height: 250px;
@@ -106,6 +106,7 @@
     transition: all 3s;
     width: 100%;
     background: #E7A7A7;
+    padding: 0;
 
     &.on {
         background: #fff;

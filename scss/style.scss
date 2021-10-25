@@ -488,7 +488,6 @@ section {
 
     .inner {
         width: 1180px;
-        height: 40vh;
         margin: 0 auto;
         position: relative;
 
@@ -600,7 +599,7 @@ section {
 
     &#brand {
         background: #fff;
-        padding: 100px 0;
+        padding: 100px 0 200px;
 
         &.on {
             h2, p{
@@ -697,7 +696,7 @@ section {
                 display: flex;
                 height: 100%;
 
-                .section {
+                .sections {
                     flex: 1;
                     display: flex;
                     justify-content: center;
@@ -722,7 +721,7 @@ section {
                         z-index: 2;
 
                         h6{
-                            font: bold 30px/1 'Georama';
+                            font: bold 30px/1 'Georama'; color: #efefef;
                         }
                     }
 
