@@ -531,47 +531,51 @@ a {
     .community .inner .search button i {
       color: #efefef; }
 
-.gallery .inner #gallery {
-  width: 100%;
-  min-height: 500px;
-  position: relative; }
-  .gallery .inner #gallery .loading {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: 0.5s; }
-    .gallery .inner #gallery .loading.off {
-      opacity: 0; }
-  .gallery .inner #gallery ul {
+.gallery {
+  padding-top: 50px; }
+  .gallery .inner h1 {
+    color: #fff; }
+  .gallery .inner #gallery {
     width: 100%;
-    transition: 0.5s;
-    transform: translateY(100px);
-    opacity: 0; }
-    .gallery .inner #gallery ul.on {
-      opacity: 1;
-      transform: translateY(0px); }
-    .gallery .inner #gallery ul::after {
-      content: "";
-      display: block;
-      clear: both; }
-    .gallery .inner #gallery ul li {
-      width: 25%;
-      float: left;
-      padding: 10px; }
-      .gallery .inner #gallery ul li > div {
-        width: 100%;
-        background: #fff;
-        padding: 10px;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); }
-        .gallery .inner #gallery ul li > div .thumb {
+    min-height: 500px;
+    position: relative; }
+    .gallery .inner #gallery .loading {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 0.5s; }
+      .gallery .inner #gallery .loading.off {
+        opacity: 0; }
+    .gallery .inner #gallery ul {
+      width: 100%;
+      transition: 0.5s;
+      transform: translateY(100px);
+      opacity: 0; }
+      .gallery .inner #gallery ul.on {
+        opacity: 1;
+        transform: translateY(0px); }
+      .gallery .inner #gallery ul::after {
+        content: "";
+        display: block;
+        clear: both; }
+      .gallery .inner #gallery ul li {
+        width: 25%;
+        float: left;
+        padding: 10px; }
+        .gallery .inner #gallery ul li > div {
           width: 100%;
-          margin-bottom: 20px; }
-        .gallery .inner #gallery ul li > div .profile img {
-          width: 24px;
-          height: 24px; }
+          background: #fff;
+          padding: 10px;
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); }
+          .gallery .inner #gallery ul li > div .thumb {
+            width: 100%;
+            margin-bottom: 20px; }
+          .gallery .inner #gallery ul li > div .profile img {
+            width: 24px;
+            height: 24px; }
 
 .pop {
   width: 100%;

@@ -2,47 +2,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 
-.gallery .inner {
-    #gallery {
-        width: 100%; min-height: 500px; position: relative;
-
-        //로딩바 이미지모양처리
-        .loading {
-            width: 100px; height: 100px; position: absolute; top: 100px; left: 50%; transform: translateX(-50%); transition: 0.5s;
-
-            //off시 안보이게 처리
-            &.off {
-                opacity: 0;
-            }
+.gallery {
+    padding-top: 50px;
+    .inner {
+        h1{
+            color: #fff;
         }
+        #gallery {
+            width: 100%;
+            min-height: 500px;
+            position: relative;
 
+            //로딩바 이미지모양처리
+            .loading {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 100px;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: 0.5s;
 
-        //디폴트로 이미지 목록 안보이게 처리
-        ul {
-            width: 100%; transition: 0.5s; transform: translateY(100px); opacity: 0;
-
-            //on이 붙으면 보이게 처리
-            &.on {
-                opacity: 1; transform: translateY(0px);
+                //off시 안보이게 처리
+                &.off {
+                    opacity: 0;
+                }
             }
 
-            &::after {
-                content: ""; display: block; clear: both;
-            }
 
-            li {
-                width: 25%; float: left; padding: 10px;
+            //디폴트로 이미지 목록 안보이게 처리
+            ul {
+                width: 100%;
+                transition: 0.5s;
+                transform: translateY(100px);
+                opacity: 0;
 
-                >div {
-                    width: 100%; background: #fff; padding: 10px; box-shadow: 5px 5px 20px rgba(0,0,0,.1);
+                //on이 붙으면 보이게 처리
+                &.on {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
 
-                    .thumb {
-                        width: 100%; margin-bottom: 20px;
-                    }
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
 
-                    .profile {
-                        img {
-                            width: 24px; height: 24px;
+                li {
+                    width: 25%;
+                    float: left;
+                    padding: 10px;
+
+                    >div {
+                        width: 100%;
+                        background: #fff;
+                        padding: 10px;
+                        box-shadow: 5px 5px 20px rgba(0, 0, 0, .1);
+
+                        .thumb {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+
+                        .profile {
+                            img {
+                                width: 24px;
+                                height: 24px;
+                            }
                         }
                     }
                 }
