@@ -531,49 +531,47 @@ a {
     .community .inner .search button i {
       color: #efefef; }
 
-.gallery {
+.gallery .inner #gallery {
   width: 100%;
-  padding: 10px;
-  transition: all .3s; }
-  .gallery ul {
-    width: 100%; }
-    .gallery ul::after {
+  min-height: 500px;
+  position: relative; }
+  .gallery .inner #gallery .loading {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s; }
+    .gallery .inner #gallery .loading.off {
+      opacity: 0; }
+  .gallery .inner #gallery ul {
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(100px);
+    opacity: 0; }
+    .gallery .inner #gallery ul.on {
+      opacity: 1;
+      transform: translateY(0px); }
+    .gallery .inner #gallery ul::after {
       content: "";
       display: block;
       clear: both; }
-    .gallery ul li {
+    .gallery .inner #gallery ul li {
+      width: 25%;
       float: left;
-      width: calc(100% / 3);
-      padding: 35px 13px; }
-      .gallery ul li .inner {
+      padding: 10px; }
+      .gallery .inner #gallery ul li > div {
         width: 100%;
-        box-sizing: border-box;
-        background: #E7A7A7;
-        border-radius: 6px; }
-        .gallery ul li .inner a {
-          display: block;
-          width: 100%; }
-          .gallery ul li .inner a img {
-            width: 100%;
-            height: 230px;
-            transition: all .3s; }
-          .gallery ul li .inner a:hover img {
-            filter: grayscale(0); }
-        .gallery ul li .inner p {
-          font: bold 25px/1.2 'Teko';
-          letter-spacing: 1px;
-          color: #efefef;
-          margin: 15px 0; }
-          .gallery ul li .inner p::after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 2px;
-            background: #efefef;
-            left: 0;
-            bottom: 0; }
-  .gallery:hover img {
-    filter: grayscale(1); }
+        background: #fff;
+        padding: 10px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); }
+        .gallery .inner #gallery ul li > div .thumb {
+          width: 100%;
+          margin-bottom: 20px; }
+        .gallery .inner #gallery ul li > div .profile img {
+          width: 24px;
+          height: 24px; }
 
 .pop {
   width: 100%;
@@ -589,9 +587,8 @@ a {
     height: 100%;
     object-fit: cover; }
   .pop span {
-    font: bold 14px/1 'Teko';
+    font: bold 14px/1 'arial';
     color: #fff;
-    letter-spacing: 2px;
     position: absolute;
     top: 20px;
     right: 20px;

@@ -2,63 +2,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 
-.gallery{
-    width: 100%; padding: 10px;
-	transition: all .3s;
+.gallery .inner {
+    #gallery {
+        width: 100%; min-height: 500px; position: relative;
 
-    ul{
-        width: 100%;
+        //로딩바 이미지모양처리
+        .loading {
+            width: 100px; height: 100px; position: absolute; top: 100px; left: 50%; transform: translateX(-50%); transition: 0.5s;
 
-        &::after{
-            content: ""; display: block; clear: both;
-        }
-
-        li{
-            float: left;
-            width: calc(100% / 3);
-            padding: 35px 13px;
-
-            .inner{
-                width: 100%; box-sizing: border-box;
-                background: #E7A7A7;
-                border-radius: 6px;
-
-                a{
-                    display: block; width: 100%;
-
-                    img{
-                        width: 100%;
-                        height: 230px;
-                        transition: all .3s;
-                    }
-                    &:hover img{
-                        filter: grayscale(0);
-                    }
-
-                }
-                p{
-                    font: bold 25px/1.2 'Teko'; letter-spacing: 1px;
-                    color: #efefef;
-                    margin: 15px 0;
-
-                    &::after{
-                        position: absolute;
-                        content: "";
-                        width: 100%;
-                        height: 2px;
-                        background: #efefef;
-                        left: 0;
-                        bottom: 0;
-                    }
-                }
-
+            //off시 안보이게 처리
+            &.off {
+                opacity: 0;
             }
         }
 
-    }
 
-    &:hover img{
-        filter: grayscale(1);
+        //디폴트로 이미지 목록 안보이게 처리
+        ul {
+            width: 100%; transition: 0.5s; transform: translateY(100px); opacity: 0;
+
+            //on이 붙으면 보이게 처리
+            &.on {
+                opacity: 1; transform: translateY(0px);
+            }
+
+            &::after {
+                content: ""; display: block; clear: both;
+            }
+
+            li {
+                width: 25%; float: left; padding: 10px;
+
+                >div {
+                    width: 100%; background: #fff; padding: 10px; box-shadow: 5px 5px 20px rgba(0,0,0,.1);
+
+                    .thumb {
+                        width: 100%; margin-bottom: 20px;
+                    }
+
+                    .profile {
+                        img {
+                            width: 24px; height: 24px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -72,7 +61,7 @@
         width:100%; height:100%; object-fit:cover; 
     }
     span{
-        font:bold 14px/1 'Teko'; color:#fff; letter-spacing: 2px;
+        font:bold 14px/1 'arial'; color:#fff; 
         position:absolute; top:20px; right:20px; 
         cursor:pointer; 
     }
